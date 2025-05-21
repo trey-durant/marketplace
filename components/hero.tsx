@@ -9,7 +9,7 @@ export default function HeroSection() {
           Address organizational skill gaps with trusted, certified training
           partners—curated by the ISP.
         </p>
-        <button className="bg-[#0B97FF] text-white px-5 py-2 rounded hover:bg-[#00182E] transition">
+        <button className="bg-[#0B97FF] text-white px-5 py-2 rounded-sm hover:bg-[#00182E] transition">
           Browse Marketplace
         </button>
       </div>

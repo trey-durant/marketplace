@@ -22,9 +22,9 @@ export default function FeaturedPrograms() {
       <h2 className="text-2xl font-bold text-navy mb-6">Featured Programs</h2>
       <div className="grid md:grid-cols-3 gap-6">
         {programs.map((program) => (
-          <div key={program.title} className="bg-white shadow p-4 rounded">
+          <div key={program.title} className="bg-white shadow-sm p-4 rounded-sm">
             <img src={program.img} alt={program.title} className="rounded mb-4 h-40 w-full object-cover" />
-            <span className="bg-cobalt text-white px-2 py-1 text-sm rounded">ENDORSED SALES TRAINING</span>
+            <span className="bg-cobalt text-white px-2 py-1 text-sm rounded-sm">ENDORSED SALES TRAINING</span>
             <h3 className="mt-2 text-navy font-semibold">{program.title}</h3>
             <p className="text-sm text-gray-600">{program.provider}</p>
           </div>

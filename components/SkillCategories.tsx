@@ -9,7 +9,7 @@ export default function SkillCategories() {
   return (
     <section className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-4">
       {categories.map(({ name, icon }) => (
-        <div key={name} className="bg-softBlue text-center py-6 rounded shadow-sm">
+        <div key={name} className="bg-soft-blue text-center py-6 rounded-sm shadow-xs">
           <div className="text-3xl mb-2">{icon}</div>
           <div className="text-navy font-semibold">{name}</div>
         </div>
