@@ -1,44 +1,23 @@
-import NextLogo from "./next-logo";
-import SupabaseLogo from "./supabase-logo";
-
-export default function Header() {
+export default function HeroSection() {
   return (
-    <div className="flex flex-col gap-16 items-center">
-      <div className="flex gap-8 justify-center items-center">
-        <a
-          href="https://supabase.com/?utm_source=create-next-app&utm_medium=template&utm_term=nextjs"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <SupabaseLogo />
-        </a>
-        <span className="border-l rotate-45 h-6" />
-        <a href="https://nextjs.org/" target="_blank" rel="noreferrer">
-          <NextLogo />
-        </a>
+    <section className="bg-[#E8F6FE] p-6 rounded-lg text-[#00182E] flex flex-col md:flex-row items-center gap-6">
+      <div className="flex-1">
+        <h1 className="text-3xl font-bold mb-2">
+          Discover Qualified Training Providers
+        </h1>
+        <p className="mb-4">
+          Address organizational skill gaps with trusted, certified training
+          partners—curated by the ISP.
+        </p>
+        <button className="bg-[#0B97FF] text-white px-5 py-2 rounded hover:bg-[#00182E] transition">
+          Browse Marketplace
+        </button>
       </div>
-      <h1 className="sr-only">Supabase and Next.js Starter Template</h1>
-      <p className="text-3xl lg:text-4xl !leading-tight mx-auto max-w-xl text-center">
-        The fastest way to build apps with{" "}
-        <a
-          href="https://supabase.com/?utm_source=create-next-app&utm_medium=template&utm_term=nextjs"
-          target="_blank"
-          className="font-bold hover:underline"
-          rel="noreferrer"
-        >
-          Supabase
-        </a>{" "}
-        and{" "}
-        <a
-          href="https://nextjs.org/"
-          target="_blank"
-          className="font-bold hover:underline"
-          rel="noreferrer"
-        >
-          Next.js
-        </a>
-      </p>
-      <div className="w-full p-[1px] bg-gradient-to-r from-transparent via-foreground/10 to-transparent my-8" />
-    </div>
+      <img
+        src="/images/hero-person.jpg"
+        alt="Professional woman"
+        className="rounded-full w-48 h-48 object-cover"
+      />
+    </section>
   );
 }
